@@ -1,0 +1,17 @@
+# Matched-marginal teammate prior shift
+
+## Question and frozen contrast
+
+The preceding held-out study found that using support-conditioned reliability helps versus fitting one rate across support conditions. Its less obvious finding was that a joint prior learned offline hurt when support patterns reversed. Those naturalistic panels also changed preference correlations and lapse marginals. This separate confirmation run isolates the dependence between slip rates, leaving their marginal distributions exactly equal.
+
+Form 256 fresh hypothetical training-free partner slots. Draw one bank of easy-support lapse rates uniformly from 0.04 to 0.40, and another of hard-support lapse rates from 0.09 to 0.47. In the aligned panel, match quantiles in the two banks. In the reversed panel match quantiles in reverse order. The two panels share the same easy rate for each partner slot. They also share an identical, independently generated preference vector, 20 identical sampled routes, cue draws, probe draw and motor uniforms for each partner slot. The preferences use the same fixed generator in both scenarios and are not coupled to lapse rank. A route has the same 24 contacts and yields the same local signal and feedback budget used in the preceding study. The test changes dependence between the two latent reliability rates only. It deliberately uses extreme rank correlation to expose the mechanism.
+
+Fit every model to the original training fixture, using its frozen seed and settings. Compare the fixed-support and personal pooled controls, the learned joint prior, the product of its exact marginals, and a fixed equal mixture of the joint and product priors. Include a dual-information oracle. The mixture is a robustness diagnostic added after the first study. Its weight of one half is fixed before this new run and is not selected from these data. No parameters are fitted on either new panel. All models, including the oracle, incur the same frequency-probe charge.
+
+The primary mechanism test is the interaction: ((joint minus factorized) reward in the aligned panel) minus ((joint minus factorized) reward in the reversed panel). The criterion is a positive lower endpoint on its 95% paired interval and at least +0.20 net reward per 24-contact route as the point estimate. Also report the individual contrasts and whether a fixed mixture reduces the worst-panel loss relative to the better prior in each panel. Bootstrap 10,000 draws jointly across the same independent partner slots in both panels. Use bootstrap maxima for worst-panel gaps. Track mismatch, abstention, and predictive Brier loss as diagnostics.
+
+## Why a prior mixture is a useful control
+
+For the same realised action and observation history, let (L_J) and (L_F) be the marginal likelihoods under the joint and factorized priors. The equal-mixture model has likelihood (L_M=(L_J+L_F)/2); thus its cumulative negative log likelihood along that same history is at most (log 2) larger than either component's. Online Bayesian conditioning implements the mixture with no look-ahead. This statement applies to a shared fixed action-observation history. Different policies can choose different actions and therefore elicit different observations, so it is not a guarantee on realised reward or on all forms of distribution shift. The experiment tests reward empirically.
+
+This is a controlled simulated population shift, with no claim about human collaborators or physical robots.

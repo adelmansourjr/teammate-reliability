@@ -1,0 +1,173 @@
+{
+  "training_partners": 4096,
+  "fit_prior": [
+    0.30579922027290446,
+    0.055311890838206625,
+    0.1327972709551657,
+    0.022173489278752435,
+    0.2826510721247563,
+    0.05141325536062378,
+    0.1286549707602339,
+    0.021198830409356724
+  ],
+  "partners_per_panel": 128,
+  "routes_per_partner": 32,
+  "contact_steps": 5,
+  "probe_cost": 0.08,
+  "matched": {
+    "means": {
+      "no_probe": {
+        "net_reward": 1.3265822023659644,
+        "mismatches": 0.67236328125,
+        "abstentions": 1.67578125,
+        "probe_used_configuration": 0.0
+      },
+      "random": {
+        "net_reward": 1.4852990522273486,
+        "mismatches": 0.668701171875,
+        "abstentions": 1.390625,
+        "probe_used_configuration": 0.68798828125
+      },
+      "entropy": {
+        "net_reward": 1.5328321571002965,
+        "mismatches": 0.676025390625,
+        "abstentions": 1.28369140625,
+        "probe_used_configuration": 0.696044921875
+      },
+      "route_frequency": {
+        "net_reward": 1.6855911248091038,
+        "mismatches": 0.672607421875,
+        "abstentions": 1.1259765625,
+        "probe_used_configuration": 1.0
+      },
+      "route_load": {
+        "net_reward": 1.6498581609953005,
+        "mismatches": 0.68798828125,
+        "abstentions": 1.117919921875,
+        "probe_used_configuration": 1.0
+      },
+      "decision_value": {
+        "net_reward": 1.688306839821961,
+        "mismatches": 0.671875,
+        "abstentions": 1.123779296875,
+        "probe_used_configuration": 1.0
+      },
+      "oracle": {
+        "net_reward": 2.912903002408349,
+        "mismatches": 0.60595703125,
+        "abstentions": 0.0,
+        "probe_used_configuration": 0.0
+      }
+    },
+    "decision_value_improvement_vs": {
+      "no_probe": [
+        0.3617246374559957,
+        0.2968150615550375,
+        0.42683348687009826
+      ],
+      "random": [
+        0.20300778759461213,
+        0.14452798866692218,
+        0.26333589741195657
+      ],
+      "entropy": [
+        0.15547468272166348,
+        0.10235364816564517,
+        0.20927207009979507
+      ],
+      "route_frequency": [
+        0.0027157150128573294,
+        -0.018815894209871044,
+        0.024864132023751116
+      ],
+      "route_load": [
+        0.03844867882666003,
+        0.011672337403888722,
+        0.06552778566044933
+      ],
+      "oracle": [
+        -1.2245961625863868,
+        -1.3333343684053685,
+        -1.1200248358406864
+      ]
+    }
+  },
+  "shifted": {
+    "means": {
+      "no_probe": {
+        "net_reward": -0.21046239967365926,
+        "mismatches": 1.0732421875,
+        "abstentions": 1.953369140625,
+        "probe_used_configuration": 0.0
+      },
+      "random": {
+        "net_reward": -0.19532503229225698,
+        "mismatches": 1.108154296875,
+        "abstentions": 1.6669921875,
+        "probe_used_configuration": 0.701171875
+      },
+      "entropy": {
+        "net_reward": -0.2377198189325383,
+        "mismatches": 1.144287109375,
+        "abstentions": 1.55615234375,
+        "probe_used_configuration": 0.703369140625
+      },
+      "route_frequency": {
+        "net_reward": -0.10563053047045164,
+        "mismatches": 1.1357421875,
+        "abstentions": 1.418212890625,
+        "probe_used_configuration": 1.0
+      },
+      "route_load": {
+        "net_reward": -0.13001750747656055,
+        "mismatches": 1.145751953125,
+        "abstentions": 1.4189453125,
+        "probe_used_configuration": 1.0
+      },
+      "decision_value": {
+        "net_reward": -0.12131970490180849,
+        "mismatches": 1.150146484375,
+        "abstentions": 1.400390625,
+        "probe_used_configuration": 1.0
+      },
+      "oracle": {
+        "net_reward": 0.993855001409401,
+        "mismatches": 0.77392578125,
+        "abstentions": 1.79638671875,
+        "probe_used_configuration": 0.0
+      }
+    },
+    "decision_value_improvement_vs": {
+      "no_probe": [
+        0.08914269477185092,
+        0.02239827459982625,
+        0.1574327133138679
+      ],
+      "random": [
+        0.07400532739044857,
+        0.015607346172198161,
+        0.1321545762967656
+      ],
+      "entropy": [
+        0.11640011403072995,
+        0.06129727087428324,
+        0.17427295441739146
+      ],
+      "route_frequency": [
+        -0.01568917443135679,
+        -0.043763134127745025,
+        0.011166887139294748
+      ],
+      "route_load": [
+        0.008697802574752118,
+        -0.028090115609503138,
+        0.04491389270751184
+      ],
+      "oracle": [
+        -1.1151747063112096,
+        -1.2289972850842974,
+        -1.008142231126742
+      ]
+    }
+  }
+}
